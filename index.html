@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Innovation Club</title>
+    <!-- Bootstrap 5 Introduction CSS Link -->
+    <link href="https://jsdelivr.net" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: system-ui, sans-serif; }
+        html { scroll-behavior: smooth; }
+        
+        .wrapper { max-width: 960px; margin: 0 auto; padding: 0 20px; }
+        
+        /* Sections */
+        header { text-align: center; padding: 50px 20px; }
+        section { padding: 40px 20px; }
+        h1 { font-size: 2rem; margin-bottom: 10px; }
+        h2 { font-size: 1.5rem; margin-bottom: 20px; text-align: center; }
+        p { font-size: 0.95rem; margin-bottom: 10px; }
+        
+        /* Grid & Cards */
+        .grid { display: flex; gap: 20px; flex-wrap: wrap; }
+        .card-box { flex: 1; min-width: 250px; padding: 20px; border-radius: 8px; border: 1px solid #ddd; }
+        .tag { display: inline-block; padding: 3px 10px; border-radius: 4px; font-size: 0.8rem; font-weight: bold; margin-bottom: 10px; }
+        
+        /* Form */
+        ;* border: 1px solid #ddd; }
+         padding: 8px; margin-bottom: 12px; border: 1px solid #ccc;  }
+        button, .action-link { display: inline-block; padding: 10px 20px; border: none; border-radius: 4px; font-weight: bold; text-decoration: none; cursor: pointer; }
+        button { width: 100%; }
+        
+        /* Footer */
+        footer { text-align: center; padding: 20px; font-size: 0.85rem; }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Banner (Bootstrap Colors Only) -->
+    <header class="bg-primary text-white">
+        <div class="wrapper">
+            <h1>🚀 School Innovation Club</h1>
+            <p>Build projects, learn skills, and collaborate with fellow students.</p>
+            <a href="#join" class="action-link bg-white text-primary">Join Now</a>
+        </div>
+    </header>
+
+    <!-- About Section (Bootstrap Colors Only) -->
+    <section id="about" class="bg-light">
+        <div class="wrapper">
+            <h2>About Us</h2>
+            <div class="grid">
+                <div class="card-box bg-white">
+                    <h3 class="text-primary">Who We Are</h3>
+                    <p class="text-muted">A student-led club focused on hands-on projects and teamwork. Open to all skill levels.</p>
+                    <p class="text-dark">✅ Weekly workshops &nbsp; ✅ Hackathons &nbsp; ✅ Mentorship</p>
+                </div>
+                <div class="card-box bg-white">
+                    <h3 class="text-primary">Weekly Meetings</h3>
+                    <p class="text-dark"><strong>Time:</strong> Wednesdays, 3:30 PM – 4:45 PM</p>
+                    <p class="text-muted"><strong>Room:</strong> 204, Science Block</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section (Bootstrap Colors Only) -->
+    <section id="events" class="bg-white">
+        <div class="wrapper">
+            <h2>Upcoming Events</h2>
+            <div class="grid">
+                <div class="card-box bg-light">
+                    <span class="tag bg-primary text-white">Workshop</span>
+                    <h4>Web Design Basics</h4>
+                    <p class="text-muted">Build your first webpage. No experience needed.</p>
+                    <small class="text-primary">📅 Next Wednesday • Room 204</small>
+                </div>
+                <div class="card-box bg-light">
+                    <span class="tag bg-success text-white">Contest</span>
+                    <h4>Annual Idea Pitch</h4>
+                    <p class="text-muted">Pitch a campus solution and win prizes.</p>
+                    <small class="text-success">📅 Dec 5 • Main Auditorium</small>
+                </div>
+                <div class="card-box bg-light">
+                    <span class="tag bg-warning text-dark">Social</span>
+                    <h4>Club Showcase</h4>
+                    <p class="text-muted">Demo semester projects with snacks and games.</p>
+                    <small class="text-dark">📅 Dec 18 • Student Lounge</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section (Bootstrap Colors Only) -->
+    <section id="team" class="bg-light">
+        <div class="wrapper">
+            <h2>Officers</h2>
+            <div class="grid">
+                <div class="card-box bg-white">
+                    <h4>Vinayak Thakur</h4>
+                    <p class="text-primary">President • Grade 12</p>
+                    <p class="text-muted">Leads projects and school events.</p>
+                </div>
+                <div class="card-box bg-white">
+                    <h4>Priya Patel</h4>
+                    <p class="text-primary">Vice President • Grade 11</p>
+                    <p class="text-muted">Runs weekly workshops.</p>
+                </div>
+                <div class="card-box bg-white">
+                    <h4>Rohan Verma</h4>
+                    <p class="text-primary">Coordinator • Grade 11</p>
+                    <p class="text-muted">Manages socials and contests.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Join Form (Bootstrap Colors Only) -->
+    <section id="join" class="bg-white">
+        <div class="wrapper">
+            <h2>Join the Club</h2>
+            <form class="bg-light" onsubmit="alert('Signed up! See you at the next meeting.'); return false;">
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="School Email" required>
+                <select required>
+                    <option value="" selected disabled>Select Grade...</option>
+                    <option value="9">Grade 9</option>
+                    <option value="10">Grade 10</option>
+                    <option value="11">Grade 11</option>
+                    <option value="12">Grade 12</option>
+                </select>
+                <button type="submit" class="bg-primary text-white">Sign Up</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer (Bootstrap Colors Only) -->
+    <footer class="bg-dark text-white">
+        <p>© 2026 School Innovation Club • <span class="text-warning">club@yourschool.edu</span></p>
+    </footer>
+
+</body>
+</html>
+
+</body>
+</html>
